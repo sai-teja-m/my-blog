@@ -11,8 +11,8 @@ const ArticlePage = function (){
     return (
         <div>
             <h1>{article.name}</h1>
-            {article.content.map(paragraph=>(
-                <p>{paragraph}</p>
+            {article.content.map((paragraph, index)=>(
+                <p key = {index}>{paragraph}</p>
             ))}
         </div>
     )
