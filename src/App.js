@@ -6,6 +6,7 @@ import About from './pages/About';
 import ArticleListPage from './pages/ArticleListPage';
 import ArticlePage from './pages/ArticlePage';
 import NavBar from './NavBar';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/articles' element={<ArticleListPage />} />
             <Route path='/article/:articleId' element={<ArticlePage />} />
             <Route path='/about' element={<About />} />
+            <Route path='*' element = {<NotFoundPage/>} />            //every URL except mentioned above
           </Routes>
         </div>
       </div>
